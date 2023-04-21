@@ -1,0 +1,592 @@
+```{r}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("edgeR")
+BiocManager::install("limma")
+BiocManager::install("GenomicFeatures")
+```
+
+```{r}
+library(limma)
+library(edgeR)
+```
+
+```{r, message = FALSE}
+install.packages("tidyverse")
+library(tidyverse)
+```
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data Import & Identifying lncRNAs 
+```{r}
+# Install the required package
+install.packages("readr")
+# Load the installed Package
+library(readr)
+```
+
+```{r}
+CLLseq <- read.delim("RNAseqdata/cllmap_rnaseq_tpms_603samps_deseqLog10_batchcorr.tsv")
+```
+
+```{r}
+library(rtracklayer)
+gencode_lncRNAs = readGFF("RNAseqdata/gencode.v43.long_noncoding_RNAs.gtf")
+```
+
+```{r}
+CLL_lncRNAs = CLLseq |>
+  semi_join(gencode_lncRNAs, by = c("Name" = "gene_id"))
+```
+
+```{r}
+CLL_seq_descriptions = CLLseq[, -1]
+```
+
+```{r}
+CLL_lncRNAs_descriptions = CLL_lncRNAs[, -1]
+```
+
+```{r}
+CG_data = CLL_seq_descriptions |>
+  filter(Description == "NFE2L2" | Description == "NLRP3" | 
+           Description == "ATP7B" | Description == "ATP7A" | Description == "SLC31A1" |
+           Description == "FDX1" | Description == "LIAS" | Description == "LIPT1" |
+           Description == "LIPT2" | Description == "DLD" | Description == "DLAT" |
+           Description == "PDHA1" | Description == "PDHB" | Description == "MTF1" |
+           Description == "GLS" | Description == "CDKN2A" | Description == "DBT" |
+           Description == "GCSH" | Description == "DLST")
+```
+
+## Pearson Correlation Analysis 
+
+```{r}
+pearson_cor <- array(dim = c(11, 659))
+
+for (x in 1:nrow(CG_data)) {
+  for (y in 1:nrow(CLL_lncRNAs_descriptions)) {
+    pearson_cor[x, y] <- cor(t(CG_data[x, -1]), t(CLL_lncRNAs_descriptions[y, -1]), method = "pearson")
+  }
+}
+```
+
+```{r}
+as.data.frame(pearson_cor)
+colnames(pearson_cor) <- CLL_lncRNAs_descriptions[, 1]
+rownames(pearson_cor) <- CG_data[, 1]
+```
+
+```{r}
+pearson_p <- array(dim = c(11, 659))
+
+for (x in 1:nrow(CG_data)) {
+  for (y in 1:nrow(CLL_lncRNAs_descriptions)) {
+    pearson_p[x, y] <- cor.test(t(CG_data[x, -1]), t(CLL_lncRNAs_descriptions[y, -1]))$p.value
+  }
+}
+```
+
+```{r}
+as.data.frame(pearson_p)
+colnames(pearson_p) <- CLL_lncRNAs_descriptions[, 1]
+rownames(pearson_p) <- CG_data[, 1]
+```
+
+```{r}
+pearson_combined <- array(dim = c(11, 659))
+
+for (x in 1:nrow(CG_data)) {
+  for (y in 1:nrow(CLL_lncRNAs_descriptions)) {
+    pearson_combined[x, y] <- ifelse(abs(pearson_cor[x, y]) > 0.3 & pearson_p[x, y] < 0.0001, 1, 0)
+  }
+}
+```
+
+```{r}
+as.data.frame(pearson_combined)
+colnames(pearson_combined) <- CLL_lncRNAs_descriptions[, 1]
+rownames(pearson_combined) <- CG_data[, 1]
+```
+
+```{r}
+sum(pearson_combined == "1")
+```
+
+# TODO: create a sankey diagram to display lncRNAs 
+
+```{r}
+pearson_combined = as.data.frame(pearson_combined)
+```
+
+```{r}
+pearson_combined |> 
+  filter_all(any_vars(. %in% c(1)))
+```
+
+```{r}
+# this gives the lncRNAs that passed pearson correlation 
+apply(pearson_combined == 1, 1, function(x) names(which(x)))
+```
+
+```{r}
+pearson_lncRNAs = c("RP11-275I14.4", "AC107081.5", "RP11-180C16.1", "RP11-135A24.4", "RP11-258F1.1", "RP11-1079K10.4", "AC005306.3", "RP5-994D16.9", "RP11-582J16.5", "RP11-48B3.4", "RP11-1100L3.8", "RP11-1049A21.2", "RP11-649E7.5", "RP11-143J12.3", "CTD-3222D19.11", "ZRANB2-AS1", "AC107081.5", "AC005540.3", "RP11-531F16.4", "CTD-2256P15.4", "RP11-5C23.1", "RP11-10N23.4", "ZSWIM8-AS1", "RP11-770J1.5", "AC009133.15", "RP11-529K1.4", "CTC-429P9.2", "CTD-2619J13.23", "RP11-98D18.15", "RP11-802O23.3", "RP3-512E2.2", "RP11-408A13.4", "RP11-156E6.1", "AC005253.2", "INE1", "RP4-781K5.2", "RP3-512E2.2", "RP11-690D19.3", "RP11-159N11.4", "RP11-334E6.10", "RP11-690D19.3", "RP11-603J24.17", "RP4-635E18.7", "RP11-552M11.4", "AC107081.5", "LA16c-366D1.3", "AC009133.15", "RP11-49K24.8", "CTC-429P9.2")
+
+pearson_lncRNAs = unique(pearson_lncRNAs)
+```
+
+## Univariable Cox Regression 
+
+```{r}
+survival_df <- read.delim("clinical data/participants.ouu1gq.tsv")
+```
+
+```{r, message = FALSE}
+install.packages(c("survival", "survminer"))
+```
+
+```{r}
+library("survminer")
+library(survival)
+```
+
+```{r}
+CLL_seq_pearson <- CLL_seq_descriptions |>
+  filter(Description %in% pearson_lncRNAs)
+```
+
+```{r}
+CLL_seq_pearson_t <- as.data.frame(t(CLL_seq_pearson))
+```
+
+```{r}
+library(tibble)
+CLL_seq_pearson_t <- tibble::rownames_to_column(CLL_seq_pearson_t, "Description")
+pearson_rowNames <- CLL_seq_pearson_t[1, ]
+CLL_seq_pearson_t <- CLL_seq_pearson_t[-1, ]
+```
+
+```{r}
+# modifying the row names so they are the same
+CLL_seq_pearson_t$Description <- gsub("\\.", "-", CLL_seq_pearson_t$Description)
+CLL_seq_pearson_t <- as.data.frame(CLL_seq_pearson_t)
+```
+
+```{r}
+# filtering survival data for the samples in CLL_seq_pearson_t 
+
+survival_df <- survival_df |>
+  filter(participant_id %in% CLL_seq_pearson_t$Description)
+```
+
+```{r}
+cox_data <- full_join(survival_df, CLL_seq_pearson_t, by = c("participant_id" = "Description"))
+```
+
+```{r}
+cox_data$V1 <- as.numeric(cox_data$V1)
+cox_data$V2 <- as.numeric(cox_data$V2)
+cox_data$V3 <- as.numeric(cox_data$V3)
+cox_data$V4 <- as.numeric(cox_data$V4)
+cox_data$V5 <- as.numeric(cox_data$V5)
+cox_data$V6 <- as.numeric(cox_data$V6)
+cox_data$V7 <- as.numeric(cox_data$V7)
+cox_data$V8 <- as.numeric(cox_data$V8)
+cox_data$V9 <- as.numeric(cox_data$V9)
+cox_data$V10 <- as.numeric(cox_data$V10)
+cox_data$V11 <- as.numeric(cox_data$V11)
+cox_data$V12 <- as.numeric(cox_data$V12)
+cox_data$V13 <- as.numeric(cox_data$V13)
+cox_data$V14 <- as.numeric(cox_data$V14)
+cox_data$V15 <- as.numeric(cox_data$V15)
+cox_data$V16 <- as.numeric(cox_data$V16)
+cox_data$V17 <- as.numeric(cox_data$V17)
+cox_data$V18 <- as.numeric(cox_data$V18)
+cox_data$V19 <- as.numeric(cox_data$V19)
+cox_data$V20 <- as.numeric(cox_data$V20)
+cox_data$V21 <- as.numeric(cox_data$V21)
+cox_data$V22 <- as.numeric(cox_data$V22)
+cox_data$V23 <- as.numeric(cox_data$V23)
+cox_data$V24 <- as.numeric(cox_data$V24)
+cox_data$V25 <- as.numeric(cox_data$V25)
+cox_data$V26 <- as.numeric(cox_data$V26)
+cox_data$V27 <- as.numeric(cox_data$V27)
+cox_data$V28 <- as.numeric(cox_data$V28)
+cox_data$V29 <- as.numeric(cox_data$V29)
+cox_data$V30 <- as.numeric(cox_data$V30)
+cox_data$V31 <- as.numeric(cox_data$V31)
+cox_data$V32 <- as.numeric(cox_data$V32)
+cox_data$V33 <- as.numeric(cox_data$V33)
+cox_data$V34 <- as.numeric(cox_data$V34)
+cox_data$V35 <- as.numeric(cox_data$V35)
+cox_data$V36 <- as.numeric(cox_data$V36)
+cox_data$V37 <- as.numeric(cox_data$V37)
+cox_data$V38 <- as.numeric(cox_data$V38)
+cox_data$V39 <- as.numeric(cox_data$V39)
+cox_data$V40 <- as.numeric(cox_data$V40)
+cox_data$V41 <- as.numeric(cox_data$V41)
+cox_data$V42 <- as.numeric(cox_data$V42)
+cox_data$V43 <- as.numeric(cox_data$V43)
+```
+
+```{r}
+# filter for full survival data , create new status column 
+
+cox_data <- cox_data |>
+  filter(!is.na(os_days)) |>
+  mutate(status = ifelse(vital_status == "alive", 1, 2))
+```
+
+```{r}
+covariates <- c("V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "V10", "V11", "V12", "V13", "V14", "V15", "V16", "V17", 
+                "V18", "V19", "V20", "V21", "V22", "V23", "V24", "V25", "V26", "V27", "V28", "V29", "V30", "V31", "V32","V33", "V34",
+                "V35", "V36", "V37", "V38", "V39", "V40", "V41", "V42", "V43")
+univ_formulas <- sapply(covariates,
+                        function(x) as.formula(paste('Surv(os_days, status)~', x)))
+                        
+univ_models <- lapply( univ_formulas, function(x){coxph(x, data = cox_data)})
+# Extract data 
+univ_results <- lapply(univ_models,
+                       function(x){ 
+                          x <- summary(x)
+                          p.value<-signif(x$wald["pvalue"], digits=2)
+                          wald.test<-signif(x$wald["test"], digits=2)
+                          beta<-signif(x$coef[1], digits=2);#coeficient beta
+                          HR <-signif(x$coef[2], digits=2);#exp(beta)
+                          HR.confint.lower <- signif(x$conf.int[,"lower .95"], 2)
+                          HR.confint.upper <- signif(x$conf.int[,"upper .95"],2)
+                          HR <- paste0(HR, " (", 
+                                       HR.confint.lower, "-", HR.confint.upper, ")")
+                          res<-c(beta, HR, wald.test, p.value)
+                          names(res)<-c("beta", "HR (95% CI for HR)", "wald.test", 
+                                        "p.value")
+                          return(res)
+                          #return(exp(cbind(coef(x),confint(x))))
+                         })
+unicox_res <- t(as.data.frame(univ_results, check.names = FALSE))
+unicox_res <- as.data.frame(unicox_res)
+```
+
+```{r}
+unicox_res_Vfiltered <- unicox_res |>
+  filter(p.value < 0.1)
+lncRNA_names <- CLL_seq_pearson$Description
+rownames(unicox_res) <- lncRNA_names 
+unicox_res_filtered <- unicox_res |>
+  filter(p.value < 0.1)
+```
+
+```{r}
+unicox_lncRNAS <- rownames(unicox_res_filtered)
+unicox_lncRNAS
+```
+
+```{r}
+install.packages("forestplot")
+```
+
+```{r}
+library(forestplot)
+base_data <- tibble::tibble(mean = c(0.18, 0.14, 0.29, 0.35, 0.33),
+                            lower = c(0.051, 0.029, 0.081, 0.12, 0.11),
+                            upper = c(0.63, 0.64, 1, 0.99, 0.98), 
+                            lncRNA = c("RP5-994D16.9", "RP11-275I14.4",
+                                       "RP11-802O23.3", "RP11-159N11.4", 
+                                       "RP11-334E6.10"),
+                            pvalue = c("0.0075", "0.012", "0.057", "0.048", 
+                                       "0.046"))
+base_data |>
+  forestplot(labeltext = c(lncRNA, pvalue),
+             vertices = TRUE,
+             xlog = TRUE) |>
+  fp_set_style(box = "royalblue",
+               line = "darkblue",
+               summary = "royalblue",
+               align = "lrrr",
+               hrz_lines = "#999999") |> 
+  fp_add_header(lncRNA = "lncRNA",
+                pvalue = "p-value") |>
+  fp_decorate_graph(graph.pos = 2)
+  
+              
+```
+
+## Lasso Analysis 
+
+```{r}
+install.packages("glmnet", repos = "https://cran.us.r-project.org")
+install.packages("caret")
+```
+
+```{r}
+library(glmnet)
+```
+
+```{r}
+survival_df <- read.delim("clinical data/participants.ouu1gq.tsv")
+```
+
+```{r}
+CLL_lncRNAs_unicox <- CLL_lncRNAs_descriptions |>
+  filter(Description %in% unicox_lncRNAS)
+```
+
+```{r}
+# splitting training and testing data 
+CLL_lncRNAs_raw <- CLL_lncRNAs_unicox[, -1]
+colsize <- ncol(CLL_lncRNAs_raw)
+
+## 50% of the sample size
+smp_size <- floor(0.50 * colsize)
+
+## set the seed to make your partition reproducible
+set.seed(123)
+train_ind <- sample(seq_len(colsize), size = smp_size)
+
+train <- CLL_lncRNAs_raw[, train_ind]
+test <- CLL_lncRNAs_raw[, -train_ind]
+```
+
+```{r}
+train['Description'] <- CLL_lncRNAs_unicox$Description
+test['Description'] <- CLL_lncRNAs_unicox$Description
+```
+
+```{r}
+library(tibble)
+train_t <- as.data.frame(t(train))
+train_t <- tibble::rownames_to_column(train_t, "Description")
+train_t <- train_t[-302, ]
+train_t$Description <- gsub("\\.", "-", train_t$Description)
+train_t <- as.data.frame(train_t)
+
+test_t <- as.data.frame(t(test))
+test_t <- tibble::rownames_to_column(test_t, "Description")
+test_t <- test_t[-302, ]
+test_t$Description <- gsub("\\.", "-", test_t$Description)
+test_t <- as.data.frame(test_t)
+```
+
+```{r}
+library(caret)
+```
+
+```{r}
+cols = c('V1', 'V2', 'V3', 'V4', 'V5', 'V6')
+
+pre_proc_val <- preProcess(train_t[,cols], method = c("center", "scale"))
+
+train_t[,cols] = predict(pre_proc_val, train_t[,cols])
+test_t[,cols] = predict(pre_proc_val, test_t[,cols])
+```
+
+
+```{r}
+# filtering survival data for the samples in train_t
+
+survival_df <- survival_df |>
+  filter(participant_id %in% train_t$Description)
+```
+
+```{r}
+survival_df <- survival_df |>
+  filter(!is.na(os_days))
+```
+
+```{r}
+lasso_data <- full_join(survival_df, train_t, by = c("participant_id" = "Description"))
+```
+
+```{r}
+lasso_data$V1 <- as.numeric(lasso_data$V1)
+lasso_data$V2 <- as.numeric(lasso_data$V2)
+lasso_data$V3 <- as.numeric(lasso_data$V3)
+lasso_data$V4 <- as.numeric(lasso_data$V4)
+lasso_data$V5 <- as.numeric(lasso_data$V5)
+lasso_data$V6 <- as.numeric(lasso_data$V6)
+```
+
+```{r}
+lasso_data <- lasso_data |>
+  filter(!is.na(os_days)) |>
+  mutate(status = ifelse(vital_status == "alive", 1, 2))
+
+# create new status column 
+```
+
+```{r}
+Xfull <- model.matrix(status ~ V1 + V2 + V3 + V4 + V5 + V6, data = lasso_data)
+Xfull <- Xfull[, -1] # the Lasso will add its own intercept to the model</pre>
+Y <- lasso_data$os_days 
+lambdas <- 10^{seq(from = -2, to = 5, length = 100)}
+lafit <- glmnet(Xfull, Y, alpha = 1, lambda = lambdas)
+plot(lafit, xvar = "lambda")
+```
+
+```{r}
+cv.rrfit <- cv.glmnet(Xfull, Y, alpha = 1, lambda = lambdas) 
+plot(cv.rrfit)
+```
+
+```{r}
+rr.best.lam <- cv.rrfit$lambda.1se 
+rr.best.lam 
+```
+
+```{r}
+rr.best <- glmnet(Xfull, Y, alpha = 1, lambda = rr.best.lam)
+coef(rr.best)
+```
+```{r}
+Lasso.lm <- lm(status ~ V1 + V2 + V3 + V4 + V5 + V6, data = lasso_data)
+summary(Lasso.lm)
+```
+
+## Multivariable Cox Analysis 
+
+```{r}
+res.multicox <- coxph(Surv(os_days, status) ~ V1 + V2 + V3, data = lasso_data)
+summary(res.multicox)
+```
+
+$$
+Risk = 0.08414 \times exp.RP5-994D16.9 + 0.08172 \times exp. RP11-275I14.4 + 0.03943 \times exp. RP11-802O23.3
+$$
+## Kaplan-Meier Curves 
+
+```{r}
+multicox_training_data <- lasso_data |>
+  select(-V4, -V5, -V6)
+```
+
+```{r}
+# split training group into low and high risk 
+multicox_training_data <- multicox_training_data |>
+  mutate(risk = 0.08414 * V1 + 0.08172 * V2 + 0.03943 * V3)
+```
+
+```{r}
+median <- median(multicox_training_data$risk)
+```
+
+```{r}
+multicox_training_data <- multicox_training_data |>
+  mutate(group = ifelse(risk < median, "high risk", "low risk"))
+
+# 1 = high risk, 0 = low risk 
+```
+
+```{r}
+visualize <- multicox_training_data |>
+  select(group, os_days, status)
+```
+
+```{r}
+Y = Surv(multicox_training_data$os_days, multicox_training_data$status == 2)
+kmfit = survfit(Y ~ multicox_training_data$group)
+summary(kmfit, times = c(seq(0, 1000, by = 100)))
+plot(kmfit, lty = c("solid", "dashed"), col = c("red", "blue"), xlab = "Survival Time In Days", ylab = "Survival Probabilities")
+legend("topright", c("High Risk", "Low Risk"), lty = c("solid", "dashed"), col = c("red", "blue"))
+```
+
+```{r}
+training_fit <- survfit(Surv(os_days, status) ~ group, data = multicox_training_data)
+ggsurvplot(training_fit,
+           pval = TRUE,
+           risk.table = TRUE, # Add risk table
+           risk.table.col = "strata", # Change risk table color by groups
+           linetype = "strata", # Change line type by groups
+           surv.median.line = "hv", # Specify median survival
+           ggtheme = theme_bw(), # Change ggplot2 theme
+           palette = c("#E7B800", "#2E9FDF"))
+```
+
+```{r}
+surv_diff <- survdiff(Surv(os_days, status) ~ group, data = multicox_training_data)
+surv_diff
+```
+## testing group 
+
+```{r}
+survival_df <- read.delim("clinical data/participants.ouu1gq.tsv")
+```
+
+```{r}
+# filtering survival data for the samples in test_t
+
+survival_df <- survival_df |>
+  filter(participant_id %in% test_t$Description)
+```
+
+```{r}
+survival_df <- survival_df |>
+  filter(!is.na(os_days))
+```
+
+```{r}
+lasso2_data <- full_join(survival_df, test_t, by = c("participant_id" = "Description"))
+
+lasso2_data <- lasso2_data |>
+  select(-V4, -V5, -V6)
+```
+
+```{r}
+lasso2_data$V1 <- as.numeric(lasso2_data$V1)
+lasso2_data$V2 <- as.numeric(lasso2_data$V2)
+lasso2_data$V3 <- as.numeric(lasso2_data$V3)
+```
+
+```{r}
+lasso2_data <- lasso2_data |>
+  filter(!is.na(os_days)) |>
+  mutate(status = ifelse(vital_status == "alive", 1, 2))
+
+# create new status column 
+```
+
+```{r}
+# split testing group into low and high risk 
+multicox_testing_data <- lasso2_data |>
+  mutate(risk = 0.08414 * V1 + 0.08172 * V2 + 0.03943 * V3)
+```
+
+```{r}
+median2 <- median(multicox_testing_data$risk)
+```
+
+```{r}
+multicox_testing_data <- multicox_testing_data |>
+  mutate(group = ifelse(risk < median2, "high risk", "low risk"))
+
+# 1 = high risk, 0 = low risk 
+```
+
+```{r}
+testing_fit <- survfit(Surv(os_days, status) ~ group, data = multicox_testing_data)
+ggsurvplot(testing_fit,
+           pval = TRUE, 
+           risk.table = TRUE, # Add risk table
+           risk.table.col = "strata", # Change risk table color by groups
+           linetype = "strata", # Change line type by groups
+           surv.median.line = "hv", # Specify median survival
+           ggtheme = theme_bw(), # Change ggplot2 theme
+           palette = c("#E7B800", "#2E9FDF"))
+```
+```{r}
+surv_diff2 <- survdiff(Surv(os_days, status) ~ group, data = multicox_testing_data)
+surv_diff2
+```
+
+```{r}
+# Plot the baseline survival function
+ggsurvplot(survfit(res.multicox, data = lasso_data), conf.int = TRUE,
+           ggtheme = theme_bw(),
+           palette = "black")
+```
+
+
+
+
+

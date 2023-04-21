@@ -1,0 +1,1003 @@
+participant_id	categories	start_days_from_samp
+DFCI-5019	Chemo + no Ab	-6079
+DFCI-5141	Chemo + no Ab	-4384
+MDAC-0009	Chemo + no Ab	-4271
+MDAC-0002	Chemo + Ab	-3710
+MDAC-0010	Chemo + Ab	-3541
+DFCI-5072	Chemo + Ab	-3440
+MDAC-0014	Chemo + Ab	-3405
+MDAC-0006	Chemo + Ab	-3387
+DFCI-5017	Chemo + no Ab	-3336
+DFCI-5127	Chemo + no Ab	-3071
+DFCI-5011	Chemo + Ab	-2766
+MDAC-0015	Chemo + Ab	-2696
+SCLL-0494	Chemo + Ab	-2689
+SCLL-0181	Chemo + no Ab	-2683
+SCLL-0251	Chemo + no Ab	-2492
+MDAC-0026	Chemo + Ab	-2466
+MDAC-0013	Chemo + Ab	-2435
+DFCI-5074	Chemo + no Ab	-2350
+DFCI-5191	Chemo + no Ab	-2325
+DFCI-5157	Chemo + no Ab	-2217
+DFCI-5021	Chemo + no Ab	-2186
+SCLL-0181	Unknown	-2113
+SCLL-0430	Chemo + no Ab	-2036
+DFCI-5168	Ab + no chemo	-2034
+DFCI-5194	Chemo + Ab	-1928
+MDAC-0017	Chemo + Ab	-1876
+SCLL-0058	Chemo + Ab	-1832
+DFCI-5117	Chemo + no Ab	-1821
+DFCI-5108	Chemo + Ab	-1767
+JB-0025	Chemo + no Ab	-1749
+MDAC-0020	Chemo + Ab	-1617
+DFCI-5001	Chemo + Ab	-1556
+DFCI-5065	Chemo + Ab	-1540
+MDAC-0001	Chemo + Ab	-1368
+MDAC-0003	Chemo + Ab	-1285
+DFCI-5128	Chemo + no Ab	-1283
+MDAC-0025	Chemo + Ab	-1256
+DFCI-5071	Chemo + Ab	-1224
+MDAC-0011	Chemo + Ab	-1194
+MDAC-0016	Chemo + no Ab	-1164
+DFCI-5155	Chemo + Ab	-1126
+DFCI-5120	Chemo + no Ab	-1109
+SCLL-0228	Chemo + no Ab	-1090
+DFCI-5012	Chemo + Ab	-1044
+DFCI-5073	Chemo + Ab	-1008
+MDAC-0005	Chemo + Ab	-967
+MDAC-0007	Chemo + Ab	-914
+DFCI-5119	Chemo + Ab	-903
+SCLL-0176	Chemo + Ab	-887
+SCLL-0487	Chemo + no Ab	-864
+SCLL-0273	Chemo + no Ab	-861
+DFCI-5010	Chemo + Ab	-858
+SCLL-0494	Unknown	-758
+DFCI-5147	Chemo + no Ab	-757
+SCLL-0228	Unknown	-725
+MDAC-0019	Chemo + no Ab	-700
+DFCI-5004	Chemo + Ab	-648
+MDAC-0018	Chemo + Ab	-631
+SCLL-0273	Unknown	-579
+MDAC-0012	Ab + no chemo	-482
+SCLL-0074	Chemo + no Ab	-305
+DFCI-5103	Chemo + Ab	-230
+DFCI-5096	Chemo + no Ab	-225
+DFCI-5034	Ab + no chemo	-204
+DFCI-5140	Chemo + Ab	-175
+DFCI-5087	Chemo + Ab	-17
+DFCI-5086	Chemo + Ab	-15
+DFCI-5159	LEN + Ab	-14
+SCLL-0317	Chemo + no Ab	-14
+SCLL-0079	Chemo + no Ab	-7
+SCLL-0170	Chemo + Ab	-2
+DFCI-5211	Chemo + Ab	0
+DFCI-5066	Chemo + Ab	0
+GCLL-0001	Chemo + no Ab	0
+GCLL-0002	Chemo + no Ab	0
+GCLL-0003	Chemo + no Ab	0
+GCLL-0004	Chemo + Ab	0
+GCLL-0006	Chemo + no Ab	0
+GCLL-0007	Chemo + Ab	0
+GCLL-0009	Chemo + Ab	0
+GCLL-0010	Chemo + no Ab	0
+GCLL-0011	Chemo + Ab	0
+GCLL-0012	Chemo + Ab	0
+GCLL-0013	Chemo + no Ab	0
+GCLL-0014	Chemo + Ab	0
+GCLL-0015	Chemo + Ab	0
+GCLL-0016	Chemo + no Ab	0
+GCLL-0017	Chemo + Ab	0
+GCLL-0018	Chemo + Ab	0
+GCLL-0019	Chemo + Ab	0
+GCLL-0020	Chemo + no Ab	0
+GCLL-0021	Chemo + no Ab	0
+GCLL-0022	Chemo + Ab	0
+GCLL-0023	Chemo + no Ab	0
+GCLL-0024	Chemo + no Ab	0
+GCLL-0025	Chemo + Ab	0
+GCLL-0026	Chemo + Ab	0
+GCLL-0027	Chemo + Ab	0
+GCLL-0028	Chemo + no Ab	0
+GCLL-0029	Chemo + no Ab	0
+GCLL-0030	Chemo + Ab	0
+GCLL-0031	Chemo + Ab	0
+GCLL-0032	Chemo + Ab	0
+GCLL-0033	Chemo + no Ab	0
+GCLL-0034	Chemo + no Ab	0
+GCLL-0035	Chemo + Ab	0
+GCLL-0036	Chemo + Ab	0
+GCLL-0037	Chemo + no Ab	0
+GCLL-0038	Chemo + Ab	0
+GCLL-0039	Chemo + no Ab	0
+GCLL-0041	Chemo + no Ab	0
+GCLL-0042	Chemo + Ab	0
+GCLL-0043	Chemo + Ab	0
+GCLL-0044	Chemo + Ab	0
+GCLL-0045	Chemo + no Ab	0
+GCLL-0046	Chemo + Ab	0
+GCLL-0047	Chemo + no Ab	0
+GCLL-0048	Chemo + no Ab	0
+GCLL-0049	Chemo + Ab	0
+GCLL-0050	Chemo + no Ab	0
+GCLL-0051	Chemo + Ab	0
+GCLL-0052	Chemo + no Ab	0
+GCLL-0053	Chemo + no Ab	0
+GCLL-0054	Chemo + Ab	0
+GCLL-0055	Chemo + Ab	0
+GCLL-0057	Chemo + no Ab	0
+GCLL-0058	Chemo + Ab	0
+GCLL-0059	Chemo + no Ab	0
+GCLL-0061	Chemo + Ab	0
+GCLL-0062	Chemo + Ab	0
+GCLL-0063	Chemo + no Ab	0
+GCLL-0064	Chemo + Ab	0
+GCLL-0065	Chemo + no Ab	0
+GCLL-0066	Chemo + Ab	0
+GCLL-0067	Chemo + no Ab	0
+GCLL-0068	Chemo + no Ab	0
+GCLL-0069	Chemo + no Ab	0
+GCLL-0070	Chemo + no Ab	0
+GCLL-0071	Chemo + no Ab	0
+GCLL-0072	Chemo + no Ab	0
+GCLL-0073	Chemo + no Ab	0
+GCLL-0074	Chemo + Ab	0
+GCLL-0076	Chemo + Ab	0
+GCLL-0077	Chemo + Ab	0
+GCLL-0078	Chemo + no Ab	0
+GCLL-0079	Chemo + Ab	0
+GCLL-0080	Chemo + no Ab	0
+GCLL-0082	Chemo + Ab	0
+GCLL-0083	Chemo + no Ab	0
+GCLL-0084	Chemo + no Ab	0
+GCLL-0085	Chemo + no Ab	0
+GCLL-0086	Chemo + no Ab	0
+GCLL-0087	Chemo + no Ab	0
+GCLL-0088	Chemo + Ab	0
+GCLL-0090	Chemo + no Ab	0
+GCLL-0091	Chemo + Ab	0
+GCLL-0092	Chemo + no Ab	0
+GCLL-0093	Chemo + no Ab	0
+GCLL-0094	Chemo + no Ab	0
+GCLL-0095	Chemo + no Ab	0
+GCLL-0096	Chemo + no Ab	0
+GCLL-0099	Chemo + Ab	0
+GCLL-0100	Chemo + no Ab	0
+GCLL-0101	Chemo + no Ab	0
+GCLL-0102	Chemo + Ab	0
+GCLL-0103	Chemo + no Ab	0
+GCLL-0104	Chemo + Ab	0
+GCLL-0105	Chemo + Ab	0
+GCLL-0106	Chemo + no Ab	0
+GCLL-0107	Chemo + Ab	0
+GCLL-0108	Chemo + Ab	0
+GCLL-0109	Chemo + Ab	0
+GCLL-0110	Chemo + no Ab	0
+GCLL-0112	Chemo + no Ab	0
+GCLL-0114	Chemo + Ab	0
+GCLL-0115	Chemo + no Ab	0
+GCLL-0116	Chemo + no Ab	0
+GCLL-0117	Chemo + no Ab	0
+GCLL-0118	Chemo + no Ab	0
+GCLL-0119	Chemo + no Ab	0
+GCLL-0121	Chemo + Ab	0
+GCLL-0123	Chemo + Ab	0
+GCLL-0124	Chemo + Ab	0
+GCLL-0126	Chemo + Ab	0
+GCLL-0127	Chemo + no Ab	0
+GCLL-0128	Chemo + Ab	0
+GCLL-0129	Chemo + Ab	0
+GCLL-0130	Chemo + Ab	0
+GCLL-0131	Chemo + no Ab	0
+GCLL-0132	Chemo + Ab	0
+GCLL-0133	Chemo + no Ab	0
+GCLL-0135	Chemo + no Ab	0
+GCLL-0137	Chemo + Ab	0
+GCLL-0138	Chemo + no Ab	0
+GCLL-0139	Chemo + Ab	0
+GCLL-0140	Chemo + no Ab	0
+GCLL-0141	Chemo + Ab	0
+GCLL-0142	Chemo + no Ab	0
+GCLL-0143	Chemo + Ab	0
+GCLL-0144	Chemo + no Ab	0
+GCLL-0145	Chemo + no Ab	0
+GCLL-0146	Chemo + no Ab	0
+GCLL-0147	Chemo + Ab	0
+GCLL-0148	Chemo + no Ab	0
+GCLL-0149	Chemo + Ab	0
+GCLL-0150	Chemo + Ab	0
+GCLL-0151	Chemo + no Ab	0
+GCLL-0152	Chemo + no Ab	0
+GCLL-0154	Chemo + Ab	0
+GCLL-0156	Chemo + Ab	0
+GCLL-0157	Chemo + Ab	0
+GCLL-0158	Chemo + Ab	0
+GCLL-0159	Chemo + no Ab	0
+GCLL-0160	Chemo + Ab	0
+GCLL-0163	Chemo + no Ab	0
+GCLL-0164	Chemo + Ab	0
+GCLL-0165	Chemo + no Ab	0
+GCLL-0166	Chemo + no Ab	0
+GCLL-0167	Chemo + no Ab	0
+GCLL-0168	Chemo + Ab	0
+GCLL-0169	Chemo + no Ab	0
+GCLL-0170	Chemo + no Ab	0
+GCLL-0171	Chemo + no Ab	0
+GCLL-0172	Chemo + no Ab	0
+GCLL-0173	Chemo + no Ab	0
+GCLL-0174	Chemo + Ab	0
+GCLL-0175	Chemo + no Ab	0
+GCLL-0177	Chemo + Ab	0
+GCLL-0178	Chemo + no Ab	0
+GCLL-0179	Chemo + Ab	0
+GCLL-0180	Chemo + no Ab	0
+GCLL-0181	Chemo + no Ab	0
+GCLL-0182	Chemo + Ab	0
+GCLL-0184	Chemo + no Ab	0
+GCLL-0185	Chemo + Ab	0
+GCLL-0186	Chemo + no Ab	0
+GCLL-0187	Chemo + Ab	0
+GCLL-0188	Chemo + no Ab	0
+GCLL-0189	Chemo + no Ab	0
+GCLL-0190	Chemo + no Ab	0
+GCLL-0191	Chemo + no Ab	0
+GCLL-0192	Chemo + Ab	0
+GCLL-0194	Chemo + Ab	0
+GCLL-0196	Chemo + Ab	0
+GCLL-0199	Chemo + no Ab	0
+GCLL-0200	Chemo + Ab	0
+GCLL-0201	Chemo + no Ab	0
+GCLL-0202	Chemo + Ab	0
+GCLL-0203	Chemo + no Ab	0
+GCLL-0204	Chemo + Ab	0
+GCLL-0205	Chemo + no Ab	0
+GCLL-0206	Chemo + Ab	0
+GCLL-0207	Chemo + no Ab	0
+GCLL-0208	Chemo + no Ab	0
+GCLL-0209	Chemo + Ab	0
+GCLL-0210	Chemo + no Ab	0
+GCLL-0211	Chemo + no Ab	0
+GCLL-0212	Chemo + Ab	0
+GCLL-0213	Chemo + no Ab	0
+GCLL-0214	Chemo + no Ab	0
+GCLL-0215	Chemo + no Ab	0
+GCLL-0216	Chemo + no Ab	0
+GCLL-0217	Chemo + Ab	0
+GCLL-0218	Chemo + Ab	0
+GCLL-0219	Chemo + Ab	0
+GCLL-0220	Chemo + Ab	0
+GCLL-0221	Chemo + Ab	0
+GCLL-0222	Chemo + no Ab	0
+GCLL-0223	Chemo + Ab	0
+GCLL-0224	Chemo + no Ab	0
+GCLL-0225	Chemo + Ab	0
+GCLL-0226	Chemo + no Ab	0
+GCLL-0227	Chemo + no Ab	0
+GCLL-0228	Chemo + Ab	0
+GCLL-0229	Chemo + Ab	0
+GCLL-0230	Chemo + no Ab	0
+GCLL-0231	Chemo + Ab	0
+GCLL-0232	Chemo + Ab	0
+GCLL-0233	Chemo + no Ab	0
+GCLL-0234	Chemo + Ab	0
+GCLL-0235	Chemo + no Ab	0
+GCLL-0236	Chemo + Ab	0
+GCLL-0237	Chemo + no Ab	0
+GCLL-0238	Chemo + Ab	0
+GCLL-0239	Chemo + Ab	0
+GCLL-0240	Chemo + no Ab	0
+GCLL-0241	Chemo + no Ab	0
+GCLL-0242	Chemo + no Ab	0
+GCLL-0243	Chemo + Ab	0
+GCLL-0244	Chemo + no Ab	0
+GCLL-0245	Chemo + Ab	0
+GCLL-0246	Chemo + no Ab	0
+GCLL-0249	Chemo + Ab	0
+GCLL-0250	Chemo + Ab	0
+GCLL-0251	Chemo + Ab	0
+GCLL-0252	Chemo + Ab	0
+GCLL-0253	Chemo + no Ab	0
+GCLL-0254	Chemo + Ab	0
+GCLL-0255	Chemo + Ab	0
+GCLL-0256	Chemo + Ab	0
+GCLL-0257	Chemo + no Ab	0
+GCLL-0258	Chemo + no Ab	0
+GCLL-0259	Chemo + no Ab	0
+GCLL-0260	Chemo + no Ab	0
+GCLL-0261	Chemo + Ab	0
+GCLL-0262	Chemo + no Ab	0
+GCLL-0263	Chemo + Ab	0
+GCLL-0264	Chemo + Ab	0
+GCLL-0265	Chemo + Ab	0
+GCLL-0266	Chemo + no Ab	0
+GCLL-0267	Chemo + Ab	0
+GCLL-0268	Chemo + no Ab	0
+GCLL-0269	Chemo + Ab	0
+GCLL-0270	Chemo + no Ab	0
+GCLL-0271	Chemo + Ab	0
+GCLL-0272	Chemo + no Ab	0
+GCLL-0273	Chemo + no Ab	0
+GCLL-0275	Chemo + no Ab	0
+GCLL-0276	Chemo + Ab	0
+GCLL-0277	Chemo + Ab	0
+GCLL-0278	Chemo + Ab	0
+GCLL-0279	Chemo + no Ab	0
+GCLL-0280	Chemo + no Ab	0
+GCLL-0281	Chemo + no Ab	0
+GCLL-0282	Chemo + Ab	0
+GCLL-0285	Chemo + Ab	0
+GCLL-0286	Chemo + Ab	0
+GCLL-0287	Chemo + no Ab	0
+GCLL-0288	Chemo + Ab	0
+GCLL-0289	Chemo + no Ab	0
+GCLL-0290	Chemo + Ab	0
+GCLL-0291	Chemo + Ab	0
+GCLL-0293	Chemo + Ab	0
+GCLL-0294	Chemo + no Ab	0
+GCLL-0295	Chemo + no Ab	0
+GCLL-0297	Chemo + Ab	0
+GCLL-0298	Chemo + Ab	0
+GCLL-0299	Chemo + Ab	0
+GCLL-0302	Chemo + no Ab	0
+GCLL-0303	Chemo + Ab	0
+GCLL-0304	Chemo + no Ab	0
+GCLL-0305	Chemo + Ab	0
+GCLL-0306	Chemo + Ab	0
+GCLL-0307	Chemo + Ab	0
+GCLL-0308	Chemo + Ab	0
+GCLL-0309	Chemo + no Ab	0
+GCLL-0310	Chemo + Ab	0
+GCLL-0311	Chemo + no Ab	0
+GCLL-0313	Chemo + no Ab	0
+JB-0012	Chemo + Ab	0
+JB-0018	LEN + Ab	0
+NHLBI-0007	BTK inhibitor	0
+NHLBI-0013	BTK inhibitor	0
+NHLBI-0014	BTK inhibitor	0
+NHLBI-0015	BTK inhibitor	0
+NHLBI-0016	BTK inhibitor	0
+NHLBI-0022	BTK inhibitor	0
+NHLBI-0023	BTK inhibitor	0
+NHLBI-0024	BTK inhibitor	0
+NHLBI-0025	BTK inhibitor	0
+NHLBI-0026	BTK inhibitor	0
+NHLBI-0030	BTK inhibitor	0
+NHLBI-0031	BTK inhibitor	0
+NHLBI-0032	BTK inhibitor	0
+NHLBI-0034	BTK inhibitor	0
+NHLBI-0035	BTK inhibitor	0
+NHLBI-0038	BTK inhibitor	0
+NHLBI-0039	BTK inhibitor	0
+NHLBI-0040	BTK inhibitor	0
+NHLBI-0043	BTK inhibitor	0
+NHLBI-0044	BTK inhibitor	0
+NHLBI-0045	BTK inhibitor	0
+NHLBI-0046	BTK inhibitor	0
+NHLBI-0047	BTK inhibitor	0
+NHLBI-0048	BTK inhibitor	0
+NHLBI-0049	BTK inhibitor	0
+NHLBI-0051	BTK inhibitor	0
+SCLL-0010	Chemo + Ab	0
+SCLL-0029	Chemo + Ab	0
+SCLL-0052	Chemo + Ab	0
+SCLL-0058	Unknown	0
+SCLL-0087	Chemo + Ab	0
+SCLL-0091	Chemo + no Ab	0
+SCLL-0104	Unknown	0
+SCLL-0140	Ab + no chemo	0
+SCLL-0171	Chemo + Ab	0
+SCLL-0175	Chemo + Ab	0
+SCLL-0191	Chemo + no Ab	0
+SCLL-0192	Chemo + Ab	0
+SCLL-0193	Chemo + Ab	0
+SCLL-0199	Chemo + no Ab	0
+SCLL-0206	Chemo + no Ab	0
+SCLL-0236	Chemo + Ab	0
+SCLL-0237	Chemo + Ab	0
+SCLL-0239	Chemo + Ab	0
+SCLL-0301	Chemo + Ab	0
+SCLL-0312	Chemo + Ab	0
+SCLL-0335	Chemo + Ab	0
+SCLL-0399	Chemo + no Ab	0
+SCLL-0439	Chemo + Ab	0
+SCLL-0451	Chemo + Ab	0
+SCLL-0461	Chemo + no Ab	0
+SCLL-0465	Chemo + Ab	0
+SCLL-0466	Chemo + no Ab	0
+SCLL-0475	Chemo + no Ab	0
+SCLL-0485	Chemo + Ab	0
+SCLL-0493	Chemo + Ab	0
+DFCI-5002	Stem cell transplant	1
+SCLL-0141	Chemo + Ab	2
+SCLL-0177	Chemo + no Ab	3
+SCLL-0234	Chemo + no Ab	3
+NHLBI-0073	Chemo + Ab	4
+SCLL-0081	Chemo + no Ab	4
+SCLL-0105	Chemo + Ab	5
+SCLL-0148	Chemo + Ab	5
+SCLL-0176	Unknown	5
+DFCI-5018	Chemo + Ab	6
+SCLL-0004	Chemo + Ab	6
+SCLL-0005	Chemo + Ab	6
+SCLL-0012	Chemo + Ab	6
+SCLL-0174	Chemo + no Ab	6
+SCLL-0238	Chemo + no Ab	6
+SCLL-0242	Chemo + Ab	6
+JB-0003	Chemo + Ab	7
+SCLL-0024	Chemo + Ab	7
+SCLL-0063	Chemo + Ab	7
+SCLL-0098	Ab + no chemo	7
+SCLL-0110	Chemo + no Ab	7
+SCLL-0136	Chemo + no Ab	7
+SCLL-0318	Chemo + Ab	7
+SCLL-0127	Chemo + Ab	8
+SCLL-0240	Chemo + Ab	8
+SCLL-0412	Chemo + no Ab	8
+SCLL-0065	Chemo + no Ab	9
+SCLL-0167	Chemo + Ab	9
+SCLL-0288	Chemo + Ab	9
+DFCI-5102	Chemo + Ab	10
+DFCI-5054	Chemo + Ab	10
+DFCI-5095	Chemo + Ab	10
+SCLL-0272	Chemo + Ab	10
+SCLL-0015	Chemo + no Ab	11
+SCLL-0021	Chemo + Ab	13
+SCLL-0309	Chemo + no Ab	13
+SCLL-0008	Chemo + Ab	14
+SCLL-0020	Chemo + Ab	14
+SCLL-0025	Chemo + no Ab	14
+SCLL-0038	Chemo + Ab	14
+SCLL-0243	Chemo + no Ab	14
+SCLL-0003	Chemo + no Ab	15
+SCLL-0226	Chemo + Ab	15
+SCLL-0408	Chemo + Ab	15
+NHLBI-0096	Chemo + Ab	18
+SCLL-0389	Chemo + Ab	18
+DFCI-5156	LEN + Ab	19
+NHLBI-0092	Chemo + Ab	22
+SCLL-0215	Chemo + Ab	22
+SCLL-0424	Chemo + no Ab	22
+SCLL-0455	Chemo + Ab	22
+SCLL-0051	Chemo + Ab	24
+SCLL-0070	Chemo + Ab	26
+SCLL-0002	Chemo + Ab	28
+SCLL-0028	Chemo + no Ab	28
+SCLL-0403	Chemo + no Ab	28
+SCLL-0464	Chemo + no Ab	28
+SCLL-0183	Chemo + Ab	29
+SCLL-0185	Chemo + Ab	31
+SCLL-0361	Chemo + Ab	31
+DFCI-5065	Ab + no chemo	32
+DFCI-5178	Chemo + Ab	33
+SCLL-0082	Chemo + Ab	34
+SCLL-0350	Chemo + Ab	34
+SCLL-0163	Chemo + Ab	36
+SCLL-0011	Chemo + Ab	37
+SCLL-0201	Chemo + no Ab	38
+NHLBI-0061	Chemo + Ab	39
+NHLBI-0088	Chemo + Ab	39
+SCLL-0178	Chemo + no Ab	40
+DFCI-5103	Chemo + Ab	41
+DFCI-5012	Ab + no chemo	41
+SCLL-0277	BTK inhibitor	41
+DFCI-5154	Chemo + Ab	42
+DFCI-5090	Chemo + Ab	42
+SCLL-0006	Chemo + no Ab	44
+SCLL-0179	Chemo + Ab	45
+DFCI-5119	Chemo + Ab	46
+SCLL-0068	Chemo + Ab	46
+SCLL-0056	Chemo + Ab	47
+SCLL-0452	Chemo + Ab	48
+NHLBI-0074	Chemo + Ab	51
+NHLBI-0084	Chemo + Ab	52
+NHLBI-0056	Chemo + Ab	53
+NHLBI-0093	Chemo + Ab	55
+SCLL-0417	Chemo + Ab	57
+SCLL-0267	Ab + no chemo	58
+NHLBI-0096	Chemo + Ab	60
+SCLL-0475	Chemo + no Ab	64
+SCLL-0476	Chemo + Ab	67
+SCLL-0319	Chemo + no Ab	70
+SCLL-0473	Chemo + no Ab	70
+SCLL-0338	Chemo + Ab	72
+NHLBI-0070	Chemo + Ab	75
+SCLL-0335	Chemo + Ab	75
+SCLL-0151	Chemo + Ab	76
+SCLL-0425	Chemo + no Ab	76
+DFCI-5074	Ab + no chemo	77
+SCLL-0046	Chemo + Ab	77
+SCLL-0351	Chemo + Ab	77
+SCLL-0001	Chemo + no Ab	79
+JB-0012	Chemo + Ab	84
+JB-0012	Chemo + Ab	84
+NHLBI-0085	Chemo + Ab	88
+SCLL-0464	Chemo + no Ab	89
+SCLL-0424	Chemo + no Ab	93
+SCLL-0424	Unknown	93
+DFCI-5127	Ab + no chemo	94
+NHLBI-0079	Unknown	95
+SCLL-0399	Chemo + no Ab	96
+SCLL-0399	Unknown	96
+DFCI-5017	Ab + no chemo	97
+DFCI-5068	Chemo + Ab	98
+SCLL-0232	Chemo + no Ab	100
+DFCI-5102	Chemo + Ab	104
+DFCI-5102	Chemo + Ab	104
+DFCI-5011	BCL2 + chemo	105
+NHLBI-0076	Chemo + Ab	108
+SCLL-0487	Unknown	110
+SCLL-0487	Unknown	110
+SCLL-0348	Chemo + Ab	111
+SCLL-0080	Chemo + no Ab	112
+SCLL-0139	Chemo + Ab	112
+SCLL-0050	Chemo + no Ab	113
+SCLL-0049	Chemo + Ab	114
+SCLL-0419	Chemo + Ab	114
+SCLL-0243	Chemo + no Ab	119
+SCLL-0243	Unknown	119
+SCLL-0026	Chemo + Ab	120
+SCLL-0352	Chemo + no Ab	120
+DFCI-5072	BCL2 + chemo	124
+SCLL-0030	Chemo + Ab	127
+SCLL-0017	Chemo + no Ab	138
+SCLL-0045	Chemo + no Ab	139
+DFCI-5140	Ab + no chemo	146
+SCLL-0019	Chemo + Ab	151
+SCLL-0009	Chemo + no Ab	152
+SCLL-0469	Chemo + Ab	152
+NHLBI-0068	Chemo + Ab	154
+SCLL-0044	Chemo + no Ab	154
+SCLL-0169	Chemo + no Ab	160
+DFCI-5194	Chemo + Ab	162
+SCLL-0506	Chemo + no Ab	167
+SCLL-0293	Chemo + Ab	168
+NHLBI-0059	Unknown	175
+SCLL-0108	Chemo + no Ab	175
+DFCI-5159	Chemo + Ab	181
+SCLL-0263	Chemo + no Ab	184
+NHLBI-0095	Chemo + Ab	187
+SCLL-0461	Chemo + no Ab	190
+SCLL-0461	Unknown	190
+DFCI-5144	Ab + no chemo	196
+SCLL-0390	Chemo + no Ab	196
+DFCI-5096	Chemo + Ab	200
+DFCI-5073	Chemo + Ab	202
+DFCI-5165	Chemo + Ab	216
+SCLL-0022	Chemo + no Ab	216
+SCLL-0352	Unknown	222
+SCLL-0160	Chemo + no Ab	224
+DFCI-5162	Chemo + Ab	227
+SCLL-0233	Chemo + Ab	227
+SCLL-0258	Chemo + Ab	235
+SCLL-0238	Chemo + no Ab	245
+SCLL-0238	Unknown	245
+SCLL-0173	Chemo + Ab	255
+SCLL-0385	Chemo + no Ab	261
+SCLL-0296	Chemo + no Ab	264
+SCLL-0382	Chemo + no Ab	271
+SCLL-0423	Chemo + no Ab	275
+SCLL-0437	Chemo + Ab	275
+MDAC-0026	PI3K inhibitor	280
+JB-0073	BTK inhibitor	285
+NHLBI-0092	Chemo + Ab	285
+SCLL-0407	Chemo + no Ab	286
+SCLL-0234	Chemo + no Ab	287
+SCLL-0234	Unknown	287
+SCLL-0263	Unknown	287
+SCLL-0048	Chemo + Ab	291
+SCLL-0076	Chemo + no Ab	293
+SCLL-0347	Chemo + Ab	294
+SCLL-0267	Unknown	296
+SCLL-0153	Chemo + no Ab	298
+SCLL-0382	Unknown	300
+DFCI-5195	Chemo + Ab	311
+SCLL-0013	Chemo + no Ab	315
+DFCI-5092	Chemo + Ab	316
+DFCI-5086	Chemo + Ab	321
+SCLL-0032	Chemo + Ab	326
+DFCI-5141	Chemo + Ab	329
+SCLL-0259	Chemo + no Ab	351
+SCLL-0376	Chemo + no Ab	353
+DFCI-5209	Chemo + Ab	361
+CRC-0012	Chemo + Ab	362
+DFCI-5010	SRC inhibitor	362
+SCLL-0034	Chemo + Ab	366
+SCLL-0443	Chemo + Ab	374
+DFCI-5077	Chemo + Ab	375
+SCLL-0296	Unknown	376
+SCLL-0033	Chemo + Ab	380
+DFCI-5019	Chemo + Ab	390
+SCLL-0028	Chemo + no Ab	392
+DFCI-5172	Chemo + Ab	399
+DFCI-5057	Chemo + Ab	403
+DFCI-5095	Chemo + Ab	413
+DFCI-5095	Chemo + Ab	413
+SCLL-0016	Chemo + no Ab	413
+DFCI-5098	Chemo + no Ab	423
+SCLL-0041	Chemo + no Ab	426
+DFCI-5034	Chemo + Ab	431
+SCLL-0220	Chemo + Ab	435
+SCLL-0259	Unknown	441
+DFCI-5215	Chemo + Ab	450
+DFCI-5207	LEN + Ab	452
+SCLL-0174	Chemo + no Ab	452
+SCLL-0174	Unknown	452
+DFCI-5151	LEN + chemo + Ab	462
+DFCI-5203	Chemo + Ab	466
+DFCI-5035	Ab + no chemo	466
+DFCI-5157	Ab + no chemo	469
+MDAC-0006	Chemo + Ab	474
+DFCI-5184	Chemo + Ab	478
+CRC-0021	LEN + chemo + Ab	479
+SCLL-0042	Chemo + no Ab	485
+SCLL-0074	Unknown	488
+SCLL-0074	Unknown	488
+SCLL-0351	Unknown	490
+SCLL-0037	Chemo + Ab	494
+SCLL-0155	Chemo + Ab	503
+SCLL-0139	Unknown	504
+SCLL-0317	Chemo + no Ab	506
+DFCI-5027	Chemo + Ab	512
+DFCI-5071	Ab + no chemo	522
+SCLL-0045	Unknown	523
+JB-0030	PI3K + Ab	532
+SCLL-0114	Chemo + no Ab	548
+SCLL-0431	Chemo + Ab	549
+SCLL-0104	Unknown	556
+DFCI-5110	Chemo + Ab	560
+JB-0005	PI3K + chemo + Ab	567
+MDAC-0012	Ab + no chemo	574
+SCLL-0160	Unknown	574
+DFCI-5174	LEN + Ab	576
+SCLL-0470	Chemo + Ab	587
+JB-0032	Chemo + Ab	590
+DFCI-5129	Chemo + Ab	606
+DFCI-5156	LEN + Ab	607
+DFCI-5156	BTK inhibitor + Chemo + Ab	607
+SCLL-0025	Chemo + no Ab	613
+SCLL-0025	Unknown	613
+SCLL-0280	Chemo + Ab	617
+SCLL-0208	PI3K + chemo + Ab	619
+SCLL-0485	Chemo + Ab	623
+SCLL-0485	Unknown	623
+SCLL-0274	Chemo + no Ab	625
+SCLL-0293	Unknown	627
+SCLL-0319	Unknown	627
+DFCI-5105	Chemo + Ab	632
+SCLL-0054	Chemo + Ab	643
+SCLL-0018	Chemo + no Ab	644
+SCLL-0310	Chemo + Ab	650
+MDAC-0020	BCL2 inhibitor	666
+JB-0025	Chemo + no Ab	670
+SCLL-0135	Chemo + Ab	678
+DFCI-5018	Chemo + Ab	686
+DFCI-5018	Chemo + Ab	686
+DFCI-5026	Chemo + Ab	687
+SCLL-0098	Ab + no chemo	688
+SCLL-0098	Unknown	688
+SCLL-0255	Chemo + no Ab	690
+SCLL-0014	Chemo + no Ab	692
+SCLL-0068	Unknown	711
+MDAC-0018	Chemo + Ab	712
+DFCI-5075	Chemo + Ab	714
+JB-0006	LEN + chemo + Ab	714
+SCLL-0254	Chemo + no Ab	722
+SCLL-0036	Ab + no chemo	733
+NHLBI-0072	Chemo + Ab	734
+SCLL-0229	Chemo + no Ab	735
+SCLL-0312	Chemo + Ab	740
+SCLL-0312	Unknown	740
+SCLL-0473	Unknown	742
+CRC-0017	Chemo + Ab	785
+SCLL-0158	Chemo + Ab	785
+SCLL-0256	Chemo + no Ab	791
+DFCI-5147	Chemo + Ab	796
+SCLL-0023	Chemo + Ab	796
+DFCI-5120	SYK inhibitor	798
+SCLL-0002	Chemo + Ab	801
+SCLL-0422	Chemo + no Ab	801
+SCLL-0067	Chemo + no Ab	805
+DFCI-5143	Chemo + Ab	815
+DFCI-5108	Chemo + Ab	816
+CRC-0008	Chemo + Ab	819
+SCLL-0030	Unknown	820
+SCLL-0330	Chemo + Ab	826
+SCLL-0288	Chemo + Ab	832
+SCLL-0288	Unknown	832
+SCLL-0474	Chemo + no Ab	832
+SCLL-0468	Chemo + no Ab	833
+SCLL-0232	Unknown	836
+SCLL-0341	Chemo + no Ab	843
+CRC-0003	Chemo + Ab	844
+SCLL-0041	Unknown	844
+SCLL-0201	Unknown	852
+SCLL-0456	Chemo + no Ab	854
+SCLL-0140	Ab + no chemo	856
+SCLL-0385	Unknown	856
+JB-0018	Chemo + Ab	860
+SCLL-0260	Chemo + Ab	863
+SCLL-0433	Chemo + no Ab	868
+DFCI-5049	Chemo + Ab	873
+CRC-0015	Chemo + Ab	881
+SCLL-0091	Chemo + no Ab	885
+SCLL-0091	Unknown	885
+CRC-0011	Chemo + Ab	889
+SCLL-0246	PI3K + chemo + Ab	890
+SCLL-0408	Chemo + Ab	892
+DFCI-5155	BCL2 + chemo	912
+SCLL-0310	Unknown	915
+SCLL-0403	Chemo + no Ab	925
+SCLL-0403	Unknown	925
+DFCI-5176	Chemo + Ab	946
+MDAC-0001	Ab + no chemo	954
+SCLL-0422	Unknown	955
+SCLL-0270	Chemo + Ab	965
+SCLL-0064	Chemo + no Ab	966
+MDAC-0025	SYK inhibitor	969
+SCLL-0407	Unknown	987
+SCLL-0044	Unknown	990
+SCLL-0360	Chemo + Ab	999
+DFCI-5087	Chemo + Ab	1002
+SCLL-0227	Chemo + no Ab	1007
+CRC-0010	Chemo + Ab	1009
+SCLL-0498	Chemo + no Ab	1019
+MDAC-0011	PI3K inhibitor	1023
+SCLL-0097	PI3K + chemo + Ab	1040
+SCLL-0065	Chemo + no Ab	1041
+SCLL-0423	Unknown	1046
+MDAC-0010	Ab + no chemo	1056
+SCLL-0143	Chemo + no Ab	1070
+SCLL-0277	Unknown	1075
+DFCI-5001	Chemo + no Ab	1076
+DFCI-5168	Chemo + Ab	1078
+NHLBI-0075	Chemo + Ab	1084
+SCLL-0506	Unknown	1089
+SCLL-0425	Unknown	1090
+SCLL-0395	Unknown	1093
+NHLBI-0057	Chemo + Ab	1112
+SCLL-0392	Chemo + Ab	1112
+SCLL-0301	Chemo + Ab	1132
+SCLL-0410	Chemo + Ab	1134
+DFCI-5139	Chemo + Ab	1149
+SCLL-0280	Unknown	1157
+SCLL-0075	Chemo + no Ab	1176
+DFCI-5021	BCL2 + chemo	1178
+SCLL-0449	Chemo + Ab	1195
+SCLL-0402	Chemo + Ab	1196
+SCLL-0477	Unknown	1210
+SCLL-0453	Chemo + no Ab	1212
+SCLL-0031	Chemo + Ab	1220
+SCLL-0052	Chemo + Ab	1225
+SCLL-0052	Unknown	1225
+DFCI-5069	Chemo + Ab	1233
+SCLL-0161	Chemo + no Ab	1239
+DFCI-5115	Chemo + no Ab	1246
+DFCI-5045	Chemo + Ab	1251
+SCLL-0227	Unknown	1251
+SCLL-0483	Chemo + no Ab	1258
+SCLL-0144	Unknown	1277
+MDAC-0016	Chemo + no Ab	1280
+SCLL-0013	Unknown	1295
+SCLL-0457	Chemo + Ab	1297
+CRC-0001	Chemo + Ab	1313
+DFCI-5211	Chemo + Ab	1314
+DFCI-5211	Chemo + no Ab	1314
+SCLL-0242	Chemo + Ab	1316
+SCLL-0409	Chemo + Ab	1331
+SCLL-0342	Chemo + no Ab	1366
+SCLL-0341	Unknown	1375
+DFCI-5128	Chemo + Ab	1386
+DFCI-5066	Chemo + Ab	1389
+DFCI-5066	Chemo + no Ab	1389
+CRC-0020	Chemo + Ab	1390
+SCLL-0218	Chemo + Ab	1393
+SCLL-0300	PI3K + chemo + Ab	1398
+SCLL-0147	Chemo + Ab	1399
+SCLL-0326	Chemo + Ab	1410
+DFCI-5004	Chemo + Ab	1413
+SCLL-0361	Unknown	1415
+SCLL-0414	Chemo + Ab	1420
+SCLL-0389	Chemo + Ab	1439
+SCLL-0389	Unknown	1439
+SCLL-0102	Chemo + no Ab	1446
+SCLL-0011	Unknown	1449
+SCLL-0262	Chemo + no Ab	1463
+CRC-0013	Chemo + no Ab	1470
+SCLL-0015	Chemo + no Ab	1478
+SCLL-0015	Unknown	1478
+SCLL-0082	Unknown	1484
+SCLL-0417	Unknown	1494
+DFCI-5123	Chemo + Ab	1502
+SCLL-0274	Unknown	1506
+MDAC-0014	BCL2 inhibitor	1532
+SCLL-0472	Chemo + Ab	1534
+SCLL-0164	Chemo + Ab	1544
+CRC-0006	Chemo + Ab	1553
+SCLL-0220	Unknown	1561
+SCLL-0147	Unknown	1564
+SCLL-0491	Unknown	1568
+SCLL-0036	Unknown	1582
+SCLL-0285	Chemo + no Ab	1587
+SCLL-0034	Unknown	1590
+SCLL-0338	Unknown	1602
+SCLL-0046	Unknown	1623
+JB-0031	Chemo + Ab	1644
+SCLL-0285	Unknown	1657
+SCLL-0342	Unknown	1658
+MDAC-0015	BCL2 + Ab	1687
+SCLL-0199	Chemo + no Ab	1687
+SCLL-0210	BTK inhibitor + Ab	1688
+SCLL-0026	Unknown	1706
+SCLL-0161	Unknown	1713
+SCLL-0236	Chemo + Ab	1722
+SCLL-0236	Unknown	1722
+DFCI-5051	Chemo + Ab	1728
+SCLL-0163	Unknown	1736
+SCLL-0057	Chemo + no Ab	1743
+SCLL-0426	Chemo + no Ab	1757
+SCLL-0402	Unknown	1801
+SCLL-0272	Chemo + Ab	1810
+SCLL-0272	Unknown	1810
+CRC-0005	Chemo + Ab	1812
+CRC-0014	Chemo + Ab	1823
+SCLL-0022	Unknown	1825
+SCLL-0400	Chemo + Ab	1837
+SCLL-0166	Chemo + Ab	1841
+MDAC-0017	BTK inhibitor	1842
+SCLL-0486	Unknown	1846
+SCLL-0200	BTK inhibitor	1862
+SCLL-0264	Chemo + no Ab	1872
+SCLL-0135	Unknown	1873
+SCLL-0177	Chemo + no Ab	1878
+SCLL-0150	BTK inhibitor	1880
+SCLL-0270	Unknown	1915
+SCLL-0192	Chemo + Ab	1917
+SCLL-0148	Chemo + Ab	1918
+SCLL-0018	Unknown	1925
+SCLL-0226	Chemo + Ab	1935
+SCLL-0325	Chemo + Ab	1940
+SCLL-0021	Chemo + Ab	1943
+SCLL-0021	Unknown	1943
+SCLL-0412	Chemo + no Ab	1955
+SCLL-0412	Unknown	1955
+SCLL-0136	Chemo + no Ab	1965
+SCLL-0217	Chemo + Ab	1965
+SCLL-0237	Chemo + Ab	1967
+MDAC-0007	Chemo + Ab	1977
+SCLL-0009	Unknown	1981
+SCLL-0308	Chemo + no Ab	1991
+MDAC-0003	Ab + no chemo	2009
+JB-0013	BTK + chemo + Ab	2018
+CRC-0002	Chemo + Ab	2027
+CRC-0007	Chemo + Ab	2044
+SCLL-0001	Unknown	2051
+SCLL-0072	BTK inhibitor	2072
+SCLL-0014	Unknown	2085
+SCLL-0183	Chemo + Ab	2098
+SCLL-0183	Unknown	2098
+CRC-0009	LEN + chemo + Ab	2106
+SCLL-0087	Chemo + Ab	2108
+SCLL-0206	Chemo + no Ab	2114
+MDAC-0008	CART + I	2115
+SCLL-0498	Unknown	2118
+SCLL-0152	BTK inhibitor	2134
+SCLL-0358	Chemo + Ab	2142
+SCLL-0156	BTK inhibitor + Ab	2153
+SCLL-0191	Chemo + no Ab	2155
+SCLL-0048	Unknown	2164
+MDAC-0005	Chemo + Ab	2167
+SCLL-0193	Chemo + Ab	2177
+SCLL-0439	Chemo + Ab	2181
+SCLL-0439	Unknown	2181
+JB-0029	LEN + chemo + Ab	2186
+SCLL-0376	Unknown	2193
+DFCI-5117	Chemo + no Ab	2212
+MDAC-0009	Ab + no chemo	2217
+SCLL-0260	Unknown	2227
+DFCI-5169	Chemo + Ab	2255
+DFCI-5185	Chemo + Ab	2271
+SCLL-0262	Unknown	2282
+SCLL-0455	Chemo + Ab	2288
+SCLL-0493	Chemo + Ab	2301
+SCLL-0493	Unknown	2301
+SCLL-0127	Chemo + Ab	2326
+SCLL-0466	Chemo + no Ab	2337
+SCLL-0466	Unknown	2337
+SCLL-0320	Chemo + no Ab	2353
+SCLL-0358	Unknown	2357
+SCLL-0256	Unknown	2371
+SCLL-0320	Unknown	2374
+SCLL-0426	Unknown	2394
+SCLL-0484	BTK inhibitor	2408
+SCLL-0023	Unknown	2422
+SCLL-0024	Chemo + Ab	2422
+SCLL-0024	Unknown	2422
+MDAC-0004	BTK inhibitor	2423
+DFCI-5167	BTK + chemo + Ab	2454
+CRC-0016	Chemo + Ab	2458
+SCLL-0105	Chemo + Ab	2488
+SCLL-0304	Chemo + no Ab	2493
+SCLL-0240	Chemo + Ab	2507
+SCLL-0451	Chemo + Ab	2542
+SCLL-0434	BTK inhibitor	2562
+MDAC-0002	Ab + no chemo	2580
+SCLL-0164	Unknown	2584
+SCLL-0102	Unknown	2589
+JB-0011	Ab + no chemo	2610
+SCLL-0142	BTK inhibitor	2640
+SCLL-0063	Chemo + Ab	2662
+SCLL-0010	Chemo + Ab	2666
+SCLL-0005	Chemo + Ab	2675
+SCLL-0005	Unknown	2675
+SCLL-0070	Chemo + Ab	2696
+MDAC-0013	Chemo + Ab	2701
+SCLL-0051	Chemo + Ab	2704
+SCLL-0051	Unknown	2704
+SCLL-0239	Chemo + Ab	2722
+SCLL-0239	Unknown	2722
+NHLBI-0073	Chemo + Ab	2744
+SCLL-0309	Chemo + no Ab	2753
+SCLL-0309	Unknown	2753
+SCLL-0360	Unknown	2760
+SCLL-0158	Unknown	2770
+MDAC-0019	BCL2 + BTK	2784
+SCLL-0125	BTK inhibitor	2784
+CRC-0004	Chemo + Ab	2813
+JB-0003	Chemo + Ab	2835
+SCLL-0141	Chemo + Ab	2841
+DFCI-5089	Chemo + Ab	2880
+SCLL-0020	Chemo + Ab	2901
+SCLL-0020	Unknown	2901
+SCLL-0166	Unknown	2934
+SCLL-0430	Unknown	2955
+SCLL-0430	Unknown	2955
+SCLL-0443	Unknown	2998
+SCLL-0079	Chemo + no Ab	3032
+SCLL-0079	Unknown	3032
+SCLL-0053	Chemo + no Ab	3071
+SCLL-0170	Chemo + Ab	3079
+DFCI-5002	SCT	3110
+DFCI-5002	Stem cell transplant	3111
+SCLL-0233	Unknown	3122
+SCLL-0465	Chemo + Ab	3155
+SCLL-0124	BTK inhibitor	3158
+SCLL-0038	Chemo + Ab	3165
+SCLL-0215	Chemo + Ab	3176
+SCLL-0215	Unknown	3176
+SCLL-0318	Chemo + Ab	3269
+JB-0018	LEN + Ab	3284
+DFCI-5218	Chemo + Ab	3312
+SCLL-0175	Chemo + Ab	3313
+SCLL-0008	Chemo + Ab	3444
+SCLL-0008	Unknown	3444
+SCLL-0029	Chemo + Ab	3471
+SCLL-0019	Unknown	3499
+SCLL-0171	Chemo + Ab	3512
+SCLL-0012	Chemo + Ab	3572
+SCLL-0012	Unknown	3572
+SCLL-0219	Chemo + Ab	3625
+SCLL-0081	Chemo + no Ab	3642
+SCLL-0081	Unknown	3642
+SCLL-0031	Unknown	3656
+SCLL-0178	Unknown	3688
+SCLL-0167	Chemo + Ab	3733
+CRC-0019	Chemo + Ab	3905
+DFCI-5197	BTK inhibitor	3923
+SCLL-0050	Unknown	3927
+SCLL-0437	Unknown	3949
+DFCI-5133	Chemo + Ab	4034
+DFCI-5132	BTK inhibitor	4044
+SCLL-0004	Chemo + Ab	4081
+SCLL-0004	Unknown	4081
+DFCI-5202	Chemo + Ab	4146
+SCLL-0053	Unknown	4180
+DFCI-5112	BTK inhibitor	4181
+SCLL-0110	Chemo + no Ab	4310
+SCLL-0110	Unknown	4310
+CRC-0018	LEN + chemo + Ab	4442
+DFCI-5188	Chemo + Ab	4463
+DFCI-5047	Chemo + Ab	4517
+SCLL-0271	BTK inhibitor	4972
+DFCI-5088	BTK inhibitor	5180
+DFCI-5054	Chemo + Ab	5292
+SCLL-0054	Unknown	5565
+SCLL-0003	Chemo + no Ab	6634
